@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #ffdc9e;
+  background-color: #fff;
 }
 
 .container {
@@ -39,16 +39,47 @@ body {
 
 .multiple-choice-btn div {
   margin: 10px 0;
-  border: 1px solid black;
-  border-radius: 10px;
   width: 75%;
+  border-radius: 10px;
+  position: relative;
 }
 
 .multiple-choice-btn div label {
   padding: 10px;
+  padding-left: 35px;
   width: 100%;
   display: block;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+.multiple-choice-btn div input {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  color: transparent;
+}
+
+.multiple-choice-btn div input:after {
+  content: " ";
+  position: relative;
+  width: 13px;
+  height: 13px;
+  left: -1px;
+  border: 1px solid black;
+  border-radius: 30%;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.multiple-choice-btn div input:checked:after {
+  background-color: #01a982;
+  border-color: #01a982;
+}
+
+.multiple-choice-btn div input:checked ~ label {
+  background: #ffdc9e;
+  border-color: #ffdc9e;
 }
 
 /* Question 2 */
@@ -59,6 +90,7 @@ textarea {
   resize: none;
   border-radius: 10px;
   font-size: 16px;
+  outline-color: #ffdc9e;
 }
 
 /* Question 3 */
