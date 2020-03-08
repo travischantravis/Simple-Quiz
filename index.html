@@ -4,27 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <title>Paul The Tutor</title>
 </head>
 
 <body>
   <div class="container">
-    <h1 class="title">Quiz</h1>
+    <h1 class="title">Sample Quiz</h1>
     <form action="" class="quiz-group">
-      <div class="multiple-choice">
-        <input type="radio">
-        <input type="radio">
+
+      <div class="multiple-choice question-group">
+        <p class="question">1. Who is the best soccer player in the world?</p>
+        <div class="multiple-choice-btn">
+          <div>
+            <input type="radio" name="radio">
+            <label>Messi</label>
+          </div>
+          <div>
+            <input type="radio" name="radio">
+            <label>Ronaldo</label>
+          </div>
+          <div>
+            <input type="radio" name="radio">
+            <label>Mbappe</label>
+          </div>
+          <div>
+            <input type="radio" name="radio">
+            <label>Salah</label>
+          </div>
+        </div>
       </div>
-      <div class="text-question">
+
+      <div class="text-question question-group">
+        <p class="question">2. Write a letter to your favourite soccer player</p>
         <textarea name="" id="" cols="30" rows="10"></textarea>
       </div>
-      <div class="file-question">
+
+      <div class="file-question question-group">
+        <p class="question">3. Upload a video about your foot work</p>
         <input type="file">
       </div>
       <input type="submit" value="Submit" class="submit-btn">
     </form>
   </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
