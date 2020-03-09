@@ -71,6 +71,7 @@ body {
   background-color: #fff;
   display: inline-block;
   cursor: pointer;
+  visibility: visible;
 }
 
 .multiple-choice-btn div input:checked:after {
