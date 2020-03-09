@@ -72,14 +72,14 @@ body {
   cursor: pointer;
 }
 
-.multiple-choice-btn div input ~ label:hover {
-  background: #ffdc9e;
-  border-color: #ffdc9e;
-}
-
 .multiple-choice-btn div input:checked:after {
   background-color: #01a982;
   border-color: #01a982;
+}
+
+.multiple-choice-btn div input:checked ~ label {
+  background: #ffdc9e;
+  border-color: #ffdc9e;
 }
 
 /* Question 2 */
