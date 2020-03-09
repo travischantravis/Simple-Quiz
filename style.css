@@ -54,7 +54,7 @@ body {
 
 .multiple-choice-btn div input {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 2%;
   color: transparent;
 }
@@ -62,8 +62,8 @@ body {
 .multiple-choice-btn div input:after {
   content: " ";
   position: relative;
-  width: 13px;
-  height: 13px;
+  width: 15px;
+  height: 15px;
   left: -1px;
   border: 1px solid black;
   border-radius: 30%;
