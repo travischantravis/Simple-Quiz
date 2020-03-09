@@ -69,6 +69,7 @@ body {
   border-radius: 30%;
   background-color: #fff;
   display: inline-block;
+  cursor: pointer;
 }
 
 .multiple-choice-btn div input:checked:after {
@@ -94,14 +95,35 @@ textarea {
 
 /* Question 3 */
 
-input[type="file"] {
-  padding: 15px 30px;
+.file-btn-group {
+  position: relative;
+  padding-top: 10px;
+}
+
+.file-btn-group input[type="file"] {
+  position: absolute;
+  outline: none;
+  /* z-index: -1; */
+  display: none;
+  left: 5px;
+}
+
+.file-btn-group label {
+  cursor: pointer;
+  background-color: #ffdc9e;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.file-btn-group label:hover {
+  background-color: #ffcd74;
 }
 
 /* Submit button */
 
 .submit-btn {
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 18px;
   padding: 15px 30px;
   border-radius: 10px;
@@ -113,8 +135,8 @@ input[type="file"] {
 }
 
 .submit-btn:hover {
+  /* darken */
   background-color: #009874;
-  /* color: #fff; */
 }
 
 /* Responsive */

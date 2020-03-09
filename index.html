@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f53eb31ad9.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="./style.css">
-  <title>Paul The Tutor</title>
+  <title>Sample Quiz</title>
 </head>
 
 <body>
@@ -44,8 +45,13 @@
 
       <div class="file-question question-group">
         <p class="question">3. Upload a video of your speech.</p>
-        <input type="file" name="file">
+        <div class="file-btn-group">
+          <label for="file-btn"><i class="fas fa-cloud-upload-alt"></i> Upload video</label>
+          <input type="file" name="file-btn" id="file-btn">
+          <span id="file-name">No file selected.</span>
+        </div>
       </div>
+
       <input type="submit" value="Submit" class="submit-btn">
     </form>
   </div>
