@@ -57,6 +57,7 @@ body {
   top: 25%;
   left: 2%;
   color: transparent;
+  visibility: hidden;
 }
 
 .multiple-choice-btn div input:after {
